@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hallway</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blackout {
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    animation: blackout 2s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes blackout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+    background: rgba(255, 0, 0, 0);
+}
+
+.large-hitbox {
+    left: 45%;
+    top: 65%;
+    width: 33%;
+    height: 20%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+    <img src="https://i.imgur.com/0UnZ4WT.gif" class="background">
+
+    <audio autoplay>
+        <source src="freesound_community-horror-sting-25237.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="blackout"></div>
+
+    <a href="apartmentpenta2puzzle1.html" class="hotspot large-hitbox"></a>
+
+</div>
+
+</body>
+</html>

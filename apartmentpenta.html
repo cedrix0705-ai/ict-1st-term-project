@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hallway</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+    background: rgba(255, 0, 0, 0);
+}
+
+.large-hitbox {
+    left: 45%;
+    top: 65%;
+    width: 33%;
+    height: 20%;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+    <img src="https://imgur.com/Q00XlN9.jpg" class="background">
+
+    <a href="apartmentpentapuzzle.html" class="hotspot large-hitbox"></a>
+
+
+</div>
+
+</body>
+</html>

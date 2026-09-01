@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRT</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: black;
+}
+
+.crt {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.crt-image {
+    position: absolute;
+    width: 1200px;
+    height: 675px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.crt-screen-container {
+    position: absolute;
+    left: calc(50% - 600px + 390px);
+    top: calc(50% - 400px + 183px);
+    width: 412px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.crt-screen {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.scanlines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0px,
+        rgba(0, 0, 0, 0.1) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+    background: rgba(255, 0, 0, 0.);
+}
+
+.small-hitbox {
+    left: 240px;
+    top: 570px;
+    width: 50px;
+    height: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="crt">
+
+    <img
+        class="crt-image"
+        src="https://imgur.com/rVx8ywP.jpg"
+    >
+
+    <div class="crt-screen-container">
+
+        <iframe
+            class="crt-screen"
+            name="404"
+            src="hallway.html">
+        </iframe>
+
+        <div class="scanlines"></div>
+
+    </div>
+
+</div>
+  <a href="policewebsite.html" class="hotspot small-hitbox"></a>
+</body>
+</html>

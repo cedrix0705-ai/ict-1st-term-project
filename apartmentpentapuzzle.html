@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hallway</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+    background: transparent;
+    text-decoration: none;
+}
+
+.hotspot img {
+    width: 130%;
+    height: 130%;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hotspot-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    color: black;
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    font-size: 2vw;
+    line-height: 1.4;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.large-hitbox {
+    left: 50%;
+    top: 65%;
+    width: 33%;
+    height: 20%;
+}
+
+.large-hitbo {
+    left: 20%;
+    top: 65%;
+    width: 33%;
+    height: 20%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+    <img src="https://imgur.com/Q00XlN9.jpg" class="background">
+
+    <a href="apartmentpenta2deathanim.html" class="hotspot large-hitbox">
+        <img src="https://imgur.com/hy9YzrG.jpg">
+        <span class="hotspot-text">umbrae te vocant...<br><br>
+Nox te suscipit<br>
+audi vocem meam</span>
+    </a>
+
+    <a href="apartmentpentapuzzle2.html" class="hotspot large-hitbo">
+        <img src="https://imgur.com/hy9YzrG.jpg">
+        <span class="hotspot-text">umbrae te vocant...<br><br> Nox te suscipit<br>audi vocet meam</span>
+    </a>
+
+</div>
+
+</body>
+</html>

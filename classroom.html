@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hallway</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+    background: rgba(255, 0, 0, 0);
+}
+
+.large-hitbox {
+    top: 80%;
+    width: 100%;
+    height: 20%;
+}
+
+.small-hitbox {
+    left: 55%;
+    top: 50%;
+    width: 15%;
+    height: 20%;
+}
+
+.window-hitbox {
+    left: 57%;
+    top: 27%;
+    width: 13%;
+    height: 17%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+    <img src="https://imgur.com/hxpouvx.jpg" class="background">
+
+    <a href="hallway.html" class="hotspot large-hitbox"></a>
+
+    <a href="notebook.html" class="hotspot small-hitbox"></a>
+
+    <a href="window.html" class="hotspot window-hitbox"></a>
+
+</div>
+
+</body>
+</html>
