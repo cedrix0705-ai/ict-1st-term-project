@@ -235,6 +235,7 @@ nav a:hover { background: #8b0000; }
 #photo {
   width: 120px;
   height: 140px;
+  flex: 0 0 120px;
   background: #bbb;
   border: 1px solid #777;
   display: flex;
@@ -246,12 +247,29 @@ nav a:hover { background: #8b0000; }
   overflow: hidden;
 }
 
-/* Good ending: keep Elias's image inside the exact same photo box. */
-#photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+/* Good ending image: use the same box size as the normal placeholder. */
+#photo:has(img) {
+  width: 120px !important;
+  height: 140px !important;
+  flex: 0 0 120px;
+  font-size: 0;
+  color: transparent;
+  background: #bbb;
+  overflow: hidden !important;
+}
+
+#photo:has(img) img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  position: static !important;
+  inset: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 hr {
