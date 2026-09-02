@@ -18,6 +18,20 @@ html, body {
     height: 100%;
     overflow: hidden;
     background: black;
+    cursor: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    left: var(--cursor-x, -100px);
+    top: var(--cursor-y, -100px);
 }
 
 .crt {
@@ -95,6 +109,13 @@ html, body {
 </div>
 
 <a href="policewebsite.html" class="hotspot small-hitbox"></a>
+
+<script>
+document.addEventListener("mousemove", function (event) {
+    document.body.style.setProperty("--cursor-x", event.clientX + "px");
+    document.body.style.setProperty("--cursor-y", event.clientY + "px");
+});
+</script>
 
 </body>
 </html>
