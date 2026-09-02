@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./style.css">
 <title>CID Internal Case Management System — CASE #0017</title>
+<style>
+/* Match the original police-site photo placeholder exactly and remove its old redaction text. */
+#photo {
+    position: relative;
+    width: 150px;
+    height: 140px;
+    overflow: hidden;
+    background: transparent;
+    font-size: 0;
+    color: transparent;
+}
+
+#photo::before,
+#photo::after {
+    display: none !important;
+    content: none !important;
+}
+
+#photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    display: block;
+}
+</style>
 </head>
-
 <body>
-
 <header>
-  <div id="department">
-    METROPOLITAN POLICE DEPARTMENT
-    <span>CRIMINAL INVESTIGATION DIVISION</span>
-  </div>
+  <div id="department">METROPOLITAN POLICE DEPARTMENT<span>CRIMINAL INVESTIGATION DIVISION</span></div>
   <div id="access">INTERNAL SYSTEM<br>AUTHORIZED PERSONNEL ONLY</div>
 </header>
-
 <div id="warning">✓ CASE CLOSED — FINAL INVESTIGATION REPORT</div>
-
 <main>
-
 <div id="top-info">
   <div><p class="label">CASE NUMBER</p><h1>0017</h1></div>
   <div><p class="label">STATUS</p><p class="active">● SOLVED</p></div>
   <div><p class="label">CLASSIFICATION</p><p>MISSING PERSON / OCCULT</p></div>
   <div><p class="label">DATE CLOSED</p><p>18 OCT 2007</p></div>
 </div>
-
-<nav>
-  <a href="#summary">CASE SUMMARY</a>
-  <a href="#evidence">EVIDENCE</a>
-  <a href="#timeline">TIMELINE</a>
-  <a href="#reports">REPORTS</a>
-</nav>
-
+<nav><a href="#summary">CASE SUMMARY</a><a href="#evidence">EVIDENCE</a><a href="#timeline">TIMELINE</a><a href="#reports">REPORTS</a></nav>
 <section id="summary" class="panel">
   <div class="panel-title">CASE SUMMARY <span>FILE 0017-A — FINAL</span></div>
   <div class="panel-content">
     <div class="subject">
-      <div id="photo">
-        <img src="Elias Villareal.png" alt="Recovered photograph of Elias Villareal">
-      </div>
+      <div id="photo"><img src="Elias Villareal.png" alt="Photograph of Elias Villareal"></div>
       <div>
         <p><strong>SUBJECT:</strong> ELIAS VILLAREAL</p>
         <p><strong>AGE:</strong> 13</p>
@@ -58,7 +70,6 @@
     <p>Villareal's remains were subsequently located within the ritual site. A religious cross recovered from the apartment was found positioned over the remains during the final examination. Investigators believe this interrupted the ritual and prevented further disturbance of the site.</p>
   </div>
 </section>
-
 <section id="evidence" class="panel">
   <div class="panel-title">EVIDENCE <span>4 ITEMS — REVIEWED</span></div>
   <div class="evidence-grid">
@@ -68,7 +79,6 @@
     <details open><summary>EVIDENCE #004 — AUDIO FILE</summary><p>The 18-second recording recovered from Villareal's phone was digitally cleaned and reviewed.</p><p>The recording contains Villareal speaking the final lines of the note followed by a second unidentified voice. Investigators could not establish the identity of the second speaker.</p><p>The final audible phrase was identified as a repeated instruction to close the doors.</p></details>
   </div>
 </section>
-
 <section id="timeline" class="panel">
   <div class="panel-title">INCIDENT TIMELINE <span>14–18 OCT 2007 — FINAL</span></div>
   <div id="timeline-box">
@@ -84,7 +94,6 @@
     <div class="event"><strong>18 OCT</strong><p>Case solved. Primary suspect identified and taken into custody.</p></div>
   </div>
 </section>
-
 <section id="reports" class="panel">
   <div class="panel-title">INTERNAL REPORTS <span>FINAL ACCESS</span></div>
   <div id="reports-box">
@@ -93,13 +102,11 @@
     <details open><summary>RESTRICTED ADDENDUM — DECLASSIFIED</summary><p><strong>CAUSE OF DEATH:</strong> Villareal died during the ritual conducted by Brother Mateo Reyes.</p><p><strong>RESPONSIBLE PARTY:</strong> BROTHER MATEO REYES</p><p><strong>MOTIVE:</strong> Reyes believed Villareal was required as a final participant in a ritual intended to open a supernatural passage. Evidence indicates that Villareal was not a willing participant.</p><p><strong>CASE CONCLUSION:</strong> Reyes was arrested after investigators connected him to the ritual site and recovered written records describing the events preceding Villareal's disappearance.</p><p>The ritual site was secured and all related materials were removed from the property. The case is considered solved.</p><p>Final investigator's note: No further disturbances have been reported since the recovered cross was placed over the remains.</p></details>
   </div>
 </section>
-
 <footer>
   <div>SYSTEM: CID-04<br>DATABASE STATUS: ONLINE<br>CASE STATUS: CLOSED</div>
   <div>LAST DATABASE UPDATE:<br>18 OCT 2007 — 17:26</div>
   <div id="footer-warning">CASE ARCHIVED — ACCESS LOGGED</div>
 </footer>
-
 </main>
 </body>
 </html>
