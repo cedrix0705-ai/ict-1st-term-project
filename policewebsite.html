@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -9,6 +10,45 @@
 </head>
 
 <body>
+
+<div id="opening">
+
+  <div id="opening-box">
+
+    <p class="small">METROPOLITAN POLICE DEPARTMENT</p>
+
+    <h1>CASE #0017</h1>
+
+    <p class="case-intro">
+      Missing person investigation concerning a student last seen
+      at Angelicum School on 14 OCT 2007.
+      Case remains unresolved.
+    </p>
+
+    <input type="checkbox" id="reveal">
+
+    <label style="color:white;" for="reveal">
+      I have read the case report.
+    </label>
+
+    <p class="secret">
+      The following information is restricted to authorized personnel.
+    </p>
+
+    <div id="loading">
+
+      <span class="loading-text">LOADING CASE DATABASE...</span>
+      <span class="loaded-text">ACCESS GRANTED.</span>
+
+    </div>
+
+    <img id="loadingcircle"
+      src="https://media.tenor.com/4hfbbwuF6LgAAAAm/haiuu.webp"
+      height="40">
+
+  </div>
+
+</div>
 
 <header>
 
@@ -78,8 +118,13 @@
     <div class="subject">
 
       <div id="photo">
-        PHOTO<br>
-        UNAVAILABLE
+        <span class="redacted">
+          ████████████████<br>
+          █ PHOTO █<br>
+          ████████████████
+        </span>
+        <br>
+        PHOTO WITHHELD — FILE RESTRICTED
       </div>
 
       <div>
@@ -169,7 +214,6 @@
 
     </details>
 
-
     <details>
 
       <summary>EVIDENCE #002 — PHOTOGRAPH</summary>
@@ -191,7 +235,6 @@
 
     </details>
 
-
     <details>
 
       <summary>EVIDENCE #003 — NOTE</summary>
@@ -210,7 +253,6 @@
       </p>
 
     </details>
-
 
     <details>
 
@@ -271,7 +313,7 @@
     <div class="event suspicious">
       <strong>22:07</strong>
       <p>
-        <a href="hallway.html">
+        <a href="crtscreen.html">
           Unconfirmed observation reported near classroom.
         </a>
       </p>
@@ -345,7 +387,6 @@
 
     </details>
 
-
     <details>
 
       <summary>FOLLOW-UP INVESTIGATION</summary>
@@ -372,7 +413,6 @@
       </p>
 
     </details>
-
 
     <details>
 
