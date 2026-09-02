@@ -1,4 +1,3 @@
-```css
 * {
   box-sizing: border-box;
 }
@@ -52,19 +51,11 @@ body {
 }
 
 @keyframes fadeOpening {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+  from { opacity: 1; }
+  to { opacity: 0; visibility: hidden; }
 }
 
-#reveal {
-  margin-top: 20px;
-}
+#reveal { margin-top: 20px; }
 
 #reveal + label {
   cursor: pointer;
@@ -77,9 +68,7 @@ body {
   font-weight: bold;
 }
 
-#reveal:checked ~ .secret {
-  display: block;
-}
+#reveal:checked ~ .secret { display: block; }
 
 #loading {
   position: relative;
@@ -107,17 +96,8 @@ body {
   animation-delay: 7s;
 }
 
-@keyframes disappear {
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes appear {
-  to {
-    opacity: 1;
-  }
-}
+@keyframes disappear { to { opacity: 0; } }
+@keyframes appear { to { opacity: 1; } }
 
 #loadingcircle {
   display: block;
@@ -128,13 +108,8 @@ body {
 }
 
 @keyframes doneloading {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 header {
@@ -193,9 +168,7 @@ main {
   border-right: 1px solid #ccc;
 }
 
-#top-info > div:last-child {
-  border-right: none;
-}
+#top-info > div:last-child { border-right: none; }
 
 #top-info h1 {
   margin: 0;
@@ -229,9 +202,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
-  background: #8b0000;
-}
+nav a:hover { background: #8b0000; }
 
 .panel {
   margin-top: 15px;
@@ -254,9 +225,7 @@ nav a:hover {
   font-size: 10px;
 }
 
-.panel-content {
-  padding: 20px;
-}
+.panel-content { padding: 20px; }
 
 .subject {
   display: flex;
@@ -274,6 +243,15 @@ nav a:hover {
   text-align: center;
   color: #555;
   font-size: 11px;
+  overflow: hidden;
+}
+
+/* Good ending: keep Elias's image inside the exact same photo box. */
+#photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 hr {
@@ -327,9 +305,7 @@ details p {
   font-size: 16px;
 }
 
-#timeline-box {
-  padding: 20px;
-}
+#timeline-box { padding: 20px; }
 
 .event {
   display: flex;
@@ -338,26 +314,16 @@ details p {
   margin-bottom: 10px;
 }
 
-.event strong {
-  width: 80px;
-}
-
-.event p {
-  margin: 0;
-}
+.event strong { width: 80px; }
+.event p { margin: 0; }
 
 .suspicious {
   border-left-color: #8b0000;
   color: #8b0000;
 }
 
-#reports-box {
-  padding: 15px;
-}
-
-#reports-box details {
-  margin-bottom: 8px;
-}
+#reports-box { padding: 15px; }
+#reports-box details { margin-bottom: 8px; }
 
 footer {
   margin-top: 25px;
@@ -370,49 +336,24 @@ footer {
   line-height: 1.6;
 }
 
-#footer-warning {
-  color: #d00000;
-}
+#footer-warning { color: #d00000; }
 
 @media (max-width: 700px) {
-
-  main {
-    margin: 10px;
-  }
-
-  header {
-    padding: 10px;
-  }
-
-  #access {
-    display: none;
-  }
-
-  #top-info {
-    display: block;
-  }
-
+  main { margin: 10px; }
+  header { padding: 10px; }
+  #access { display: none; }
+  #top-info { display: block; }
   #top-info > div {
     border-right: none;
     border-bottom: 1px solid #ccc;
   }
-
-  .evidence-grid {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    display: block;
-  }
-
-  footer div {
-    margin-bottom: 10px;
-  }
-
+  .evidence-grid { grid-template-columns: 1fr; }
+  footer { display: block; }
+  footer div { margin-bottom: 10px; }
 }
 
 html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
